@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const Navbar = () => {
+  const {user, logOut} = useContext(AuthContext)
+
+  
+
     return (
         <div className="navbar bg-black text-pink-100 font-semibold text-xl">
         <div className="navbar-start">
@@ -11,7 +16,7 @@ const Navbar = () => {
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li><Link to='/'>Home</Link></li>
-              <li><Link to='/myreview'>My Review</Link></li>
+              <li><Link to='/dashboard'>Dashboard</Link></li>
               <li><Link to='additems'>Add Items</Link></li>
               <li><Link to='/blog'>Blog</Link></li>
               
@@ -24,7 +29,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
           <li><Link to='/'>Home</Link></li>
-              <li><Link to='/myreview' >My Review</Link></li>
+              <li><Link to='/dashboard' >Dashboard</Link></li>
               <li><Link to='additems'>Add Items</Link></li>
               <li><Link to='/blog'>Blog</Link></li>
               
@@ -33,21 +38,21 @@ const Navbar = () => {
         <div className="navbar-end lg:mr-5">
          
         
-        {/* {
+        {
            
             user?.uid?
                
-                <button onClick={logOut} className="btn btn-outline bg-black text-orange-600">Sign Out</button>
+                <button onClick={logOut} className="btn btn-outline text-pink-200 hover:bg-pink-200 hover:text-black ">Sign Out</button>
             :
-            <> */}
+            <>
                    
                    <Link to='/signup' className=" text-pink-100">Sign Up</Link>
                    <Link to='login' className=" text-pink-100 lg:ml-5">Sign In</Link>
-{/*                    
+                   
             </>
       
         
-        } */}
+        }
         </div>
       </div>
           );

@@ -17,7 +17,7 @@ const About = () => {
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
                     <p className='font-semibold'>Beauty Bin's story</p>
-                    <h1 className='text-5xl font-bold py-3'>About Us</h1>
+                    <h1 className='text-5xl font-bold py-3' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>About Us</h1>
                     <p className='text-xl font-semibold pt-3'>A relaxing and pleasant atmosphere, good jazz, dinner and cocktails. The PatioTime Bar opens in the centre of Florence. The only bar inspired by the 1960s, it will give you a cocktail experience that you’ll have a hard time forgetting.</p>
                 </div>
                 <div  data-aos="fade-up"
