@@ -17,7 +17,7 @@ import slide_image_7 from '../../../images/makeup7.jpg';
 
 const SwiperImg = () => {
     return (
-        <div className=' mx-10 items-center justify-center my-40  sliderImg' data-aos="zoom-out"
+        <div className=' mx-10 items-center justify-center my-40  sliderImg' data-aos="zoom-in"
         data-aos-easing="linear"
         data-aos-duration="1500">
             <div>

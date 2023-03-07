@@ -1,0 +1,122 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.newCard{
+    overflow-x: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 2px solid pink;
+    position: relative;
+    max-width: 100%;
+}
+
+.newCard-img {
+    width: 350;
+    height: 500;
+    object-fit: cover;
+    
+  }
+
+
+.newCard-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+   
+  }
+.newCard:hover .newCard-body{
+    right: 0;
+} 
+
+/* .newCard {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.newCard-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newCard-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(31, 61, 71, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.newCard:hover .newCard-body {
+  opacity: 1;
+} */
+
+
+
+/* .newCard {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+  }
+  
+  .newCard-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .newCard-body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+    background: rgba(31, 61, 71, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .newCard:hover .newCard-body {
+    opacity: 1;
+    left: 0;
+  } */ 
