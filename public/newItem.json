@@ -1,0 +1,69 @@
+[
+    {
+        "id": "1",
+        "location": "Mirabazar",
+        "resale_price": "485",
+        "original_peice": "730",
+        "post_time": "20 November",
+        "img": "https://i.ibb.co/jvCyBpV/3a04c184b222bce92eba96d90dff3d20.jpg",
+        
+        "title" : "pendent"
+        
+    },
+    {
+        "id": "2",
+        "location": "Moulvibazar",
+        "resale_price": "485",
+        "original_peice": "730",
+        "post_time": "20 November",
+        "img": "https://m.media-amazon.com/images/I/81mLNjHKAlL._AC_UY300_.jpg",
+       
+        "title" : "Brecelet"
+        
+    },
+    {
+        "id": "3",
+        "location": "Mirabazar",
+        "resale_price": "485",
+        "original_peice": "730",
+        "post_time": "20 November",
+        "img": "https://i.ibb.co/2Z4W7t7/il-340x270-3973310851-c1rc.jpg",
+       
+        "title" : "Earrings"
+        
+    },
+    {
+        "id": "4",
+        "location": "Mirabazar",
+        "resale_price": "485",
+        "original_peice": "730",
+        "post_time": "20 November",
+        "img": "https://i.ibb.co/80JR0jn/81uj-S9tnpu-L-AC-SX395-SY395-QL70-ML2.jpg",
+       
+        "title" : "bags"
+        
+    },
+    {
+        "id": "5",
+        "location": "Mirabazar",
+        "resale_price": "485",
+        "original_peice": "730",
+        "post_time": "20 November",
+        "img": "https://i.ibb.co/RyM6ZR8/5cf657ff7f4e8b92c35b8e6efa4f8d14.jpg",
+       
+        "title" : "Watch"
+        
+    },
+    {
+        "id": "6",
+        "location": "Mirabazar",
+        "resale_price": "485",
+        "original_peice": "730",
+        "post_time": "20 November",
+        "img": "https://i.ibb.co/3rtgWPH/e816a1a045b3de611488ffb89dad0540.jpg",
+      
+        "title" : "heighlighter"
+        
+    }
+    
+]

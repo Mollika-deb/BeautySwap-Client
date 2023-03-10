@@ -17,9 +17,7 @@ import slide_image_7 from '../../../images/makeup7.jpg';
 
 const SwiperImg = () => {
     return (
-        <div className=' mx-10 items-center justify-center my-40  sliderImg' data-aos="zoom-in"
-        data-aos-easing="linear"
-        data-aos-duration="1500">
+        <div className=' mx-10 items-center justify-center my-40  sliderImg' >
             <div>
                 <h1 className='text-5xl text-center ' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>Follow Our Trending Items</h1>
                 <h1 className='text-center text-3xl text-gray-700 font-semibold py-5'>Buy And Get Discount</h1>

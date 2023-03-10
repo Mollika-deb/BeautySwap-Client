@@ -17,12 +17,12 @@ const Offer = () => {
                     <div>
                         <img src={img2} alt="" className='w-3/4 h-auto' style={{ height: "550px" }} data-aos="zoom-in"
                             data-aos-easing="linear"
-                            data-aos-duration="1500" />
+                            data-aos-duration="3000" />
                     </div>
                     <div className='flex justify-center items-center'>
                         <div data-aos="fade-left"
                             data-aos-easing="linear"
-                            data-aos-duration="1500" >
+                            data-aos-duration="3000" >
                             <h1 className="text-5xl font-bold" style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>20% Flat Disscount</h1>
                             <h1 className="text-4xl py-3 font-semibold text-gray-600">On makeup Products</h1>
                             <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
@@ -37,7 +37,7 @@ const Offer = () => {
                     <div className='flex justify-center items-center'>
                         <div data-aos="fade-right"
                             data-aos-easing="linear"
-                            data-aos-duration="1500">
+                            data-aos-duration="3000">
                             <h1 className="text-5xl font-bold" style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>20% Flat Disscount</h1>
                             <h1 className="text-4xl py-3  font-semibold text-gray-600">On Bags & watch </h1>
                             <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
@@ -47,7 +47,7 @@ const Offer = () => {
                     <div className='flex justify-end'>
                         <img src={img3} alt="" className='w-3/4 h-auto' style={{ height: "550px" }} data-aos="zoom-in"
                             data-aos-easing="linear"
-                            data-aos-duration="1500" />
+                            data-aos-duration="3000" />
                     </div>
                 </div>
             </div>
@@ -57,12 +57,12 @@ const Offer = () => {
                     <div>
                         <img src={img1} alt="" className='w-3/4 h-auto' style={{ height: "550px" }} data-aos="zoom-in"
                             data-aos-easing="linear"
-                            data-aos-duration="1500" />
+                            data-aos-duration="3000" />
                     </div>
                     <div className='flex justify-center items-center'>
                         <div data-aos="fade-left"
                             data-aos-easing="linear"
-                            data-aos-duration="1500">
+                            data-aos-duration="3000">
                             <h1 className="text-5xl font-bold" style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>20% Flat Disscount</h1>
                             <h1 className="text-4xl py-3 font-semibold text-gray-600">On Jewelry Products</h1>
                             <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>

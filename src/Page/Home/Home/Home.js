@@ -3,6 +3,8 @@ import React from 'react';
 import About from '../About/About';
 import Banner from '../Banner/Banner';
 import Category from '../Category/Category';
+import Gallery from '../Gallery/Gallery';
+import NewItem from '../NewItem/NewItem';
 import Offer from '../Offer/Offer';
 import PhotoGallery from '../PhotoGallery/PhotoGallery';
 import Service from '../Service/Service';
@@ -19,10 +21,13 @@ const Home = () => {
           <About></About>
           <Category></Category>
           <Offer></Offer>
+          <NewItem></NewItem>
           <SwiperImg></SwiperImg>
           <PhotoGallery></PhotoGallery>
          
           <BestSell></BestSell>
+
+          <Gallery></Gallery>
           <Subscribe></Subscribe>
         </div>
     );

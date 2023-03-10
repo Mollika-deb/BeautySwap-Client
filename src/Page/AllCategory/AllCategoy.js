@@ -10,7 +10,7 @@ const AllCategoy = () => {
 
     return (
         <div>
-            <h1>pkfdokk</h1>
+           
             {
                  
                     products.map(product => <AllProducts
