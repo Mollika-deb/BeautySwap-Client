@@ -28,7 +28,7 @@ const BookingModals = ({ book, setBook }) => {
         console.log(booking);
         setBook(null)
 
-        fetch('http://localhost:5000/order', {
+        fetch('https://beauty-bin-server.vercel.app/order', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

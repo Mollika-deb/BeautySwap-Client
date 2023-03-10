@@ -48,7 +48,7 @@ const SignUp = () => {
 
     const saveBuyer = (name, email, buyerRole)=>{
         const user = {name, email, buyerRole};
-        fetch('http://localhost:5000/buyer',{
+        fetch('https://beauty-bin-server.vercel.app/buyer',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -65,7 +65,7 @@ const SignUp = () => {
     }
     const saveSeller = (name, email, sallerRole)=>{
         const user = {name, email, sallerRole};
-        fetch('http://localhost:5000/buyer',{
+        fetch('https://beauty-bin-server.vercel.app/buyer',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

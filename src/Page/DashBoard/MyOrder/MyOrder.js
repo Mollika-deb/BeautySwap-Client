@@ -9,12 +9,12 @@ const MyOrder = () => {
 
     useEffect(()=>{
 
-        // fetch(`http://localhost:5000/order?email=${user.email}`)
+        // fetch(`https://beauty-bin-server.vercel.app/order?email=${user.email}`)
         // .then(res => res.json())
         // .then(data => setOrders(data))
 
         if (user && user.email) { // add null check for user object
-            fetch(`http://localhost:5000/order?email=${user.email}`)
+            fetch(`https://beauty-bin-server.vercel.app/order?email=${user.email}`)
                 .then(res => res.json())
                 .then(data => setOrders(data))
                 .catch(err => console.log(err));

@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
            {
             path:'/categories/:id',
             element:<AllCategoy></AllCategoy>,
-            loader: ({params}) => fetch(`http://localhost:5000/products?id=${params.id}`)
+            loader: ({params}) => fetch(`https://beauty-bin-server.vercel.app/products?id=${params.id}`)
            },
            {
             path:'/login',
@@ -49,7 +49,7 @@ export const router = createBrowserRouter([
             {
                 path:'/dashboard/payment/:id',
                 element:<Payments></Payments>,
-                loader:({params})=>fetch(`http://localhost:5000/order/${params.id}`) 
+                loader:({params})=>fetch(`https://beauty-bin-server.vercel.app/order/${params.id}`) 
             }
         ]
     }
