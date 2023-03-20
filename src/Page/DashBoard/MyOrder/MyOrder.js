@@ -22,7 +22,7 @@ const MyOrder = () => {
     },[user?.email])
 
     return (
-        <div>
+        <div className='my-24'>
             <h1 className='text-4xl text-center font-semibold mt-5' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>See Your Order</h1>
             <div className='grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'>
             {
@@ -31,6 +31,7 @@ const MyOrder = () => {
                 order = {order}
                 ></MyOrderCard>)
             }
+
         </div>
         </div>
     );

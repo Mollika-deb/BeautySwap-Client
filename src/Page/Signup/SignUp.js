@@ -7,48 +7,48 @@ import image from '../../images/sign1.avif'
 
 const SignUp = () => {
 
-    
+
     const navigate = useNavigate()
 
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { createUser, updateUser } = useContext(AuthContext);
     const [createUserEmail, setCreateUserEmail] = useState('');
 
-    
+
 
 
     const handleSignUp = (data) => {
         console.log(data);
         createUser(data.email, data.password)
-        .then(result =>{
-            const user = result.user;
-            console.log(user);
-            toast.success("signed up successfully");
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                toast.success("signed up successfully");
 
-           
-            
-            const userInfo = {
-                displayName : data.name
 
-            }
-            
-            updateUser(userInfo)
-            .then(()=>{
-                saveBuyer(data.name, data.email, data.buyerRole)
-                saveSeller(data.name, data.email, data.sallerRole)
-               
+
+                const userInfo = {
+                    displayName: data.name
+
+                }
+
+                updateUser(userInfo)
+                    .then(() => {
+                        saveUser(data.name, data.email, data.Role)
+                        // saveSeller(data.name, data.email, data.sallerRole)
+
+                    })
+                    .catch(error => console.error(error))
+
             })
             .catch(error => console.error(error))
-            
-        })
-        .catch(error => console.error(error))
-    
-        
+
+
     }
 
-    const saveBuyer = (name, email, buyerRole)=>{
-        const user = {name, email, buyerRole};
-        fetch('https://beauty-bin-server.vercel.app/buyer',{
+    const saveUser = (name, email, Role) => {
+        const user = { name, email, Role };
+        fetch('http://localhost:5000/user', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -59,27 +59,29 @@ const SignUp = () => {
             .then(data => {
                 console.log(data)
                 navigate('/login');
-                
-               
+
+
             })
     }
-    const saveSeller = (name, email, sallerRole)=>{
-        const user = {name, email, sallerRole};
-        fetch('https://beauty-bin-server.vercel.app/buyer',{
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json',
-            },
-            body: JSON.stringify(user)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                navigate('/');
-                
-               
-            })
-    }
+
+
+    // const saveSeller = (name, email, sallerRole)=>{
+    //     const user = {name, email, sallerRole};
+    //     fetch('https://beauty-bin-server.vercel.app/buyer',{
+    //         method: 'POST',
+    //         headers: {
+    //             'content-type': 'application/json',
+    //         },
+    //         body: JSON.stringify(user)
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log(data)
+    //             navigate('/');
+
+
+    //         })
+    // }
 
 
     // const handleSignup = event => {
@@ -104,7 +106,7 @@ const SignUp = () => {
     //         .catch(error => console.log(error))
 
 
-            
+
     // }
 
     // const handleUpdateUsrProfile = (name, photoURL) =>{
@@ -118,7 +120,7 @@ const SignUp = () => {
     //     .then(err => console.error(err))
     // }
 
-    
+
 
 
 
@@ -155,22 +157,43 @@ const SignUp = () => {
                             {errors.password && <p className='text-red-600' role="alert">{errors.password?.message}</p>}
 
                         </div>
-                        <div className="form-control">
+
+                        {/* <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Buyer role</span>
+                                <span className="label-text">buyer role</span>
                             </label>
-                            <input {...register("buyerRole")} type="text" placeholder="type buyer if you are a buyer" className="input input-bordered" />
-                            {errors.buyerRole && <p className='text-red-600' role="alert">{errors.buyerRole?.message}</p>}
+                            <input {...register("Role")} type="text" placeholder="type Buyer if you are a buyer" className="input input-bordered" />
+                            {errors.Role && <p className='text-red-600' role="alert">{errors.Role?.message}</p>}
 
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Seller role</span>
                             </label>
-                            <input {...register("sallerRole")} type="text" placeholder="type seller if you are a seller" className="input input-bordered" />
-                            {errors.sallerRole && <p className='text-red-600' role="alert">{errors.sallerRole?.message}</p>}
+                            <input {...register("Role")} type="text" placeholder="type seller if you are a seller" className="input input-bordered" />
+                            {errors.Role && <p className='text-red-600' role="alert">{errors.Role?.message}</p>}
 
-                        </div>
+                        </div> */}
+
+                        <fieldset className=' border-2 rounded-md  mt-2'>
+
+                            <legend>Select a Role:</legend>
+
+                            <div className='flex md:flex-col justify-evenly items-center'>
+                                <div>
+                                    <input {...register("Role", { required: "must be select one" })} className='mx-2' type="radio" id="buyer" name="Role" value="buyer" />
+                                    <label htmlFor="buyer">Buyer</label>
+                                </div>
+
+                                <div>
+                                    <input {...register("Role", { required: true })} className='mx-2' type="radio" id="seller" name="Role" value="seller" />
+                                    <label htmlFor="seller">Seller</label>
+                                </div>
+                            </div>
+                            {errors.Role && <p className='text-red-500'>{errors.Role.message}</p>}
+
+                        </fieldset>
+
                         <div className="form-control mt-6">
                             <input className="btn bg-pink-600 w-full" type="submit" value="SignIn" />
 

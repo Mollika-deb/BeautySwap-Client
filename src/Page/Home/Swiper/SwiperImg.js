@@ -33,6 +33,19 @@ const SwiperImg = () => {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
 
+                breakpoints={{
+                    // when window width is >= 640px
+                    640: {
+                      display: 'none'
+                    },
+                    // when window width is >= 768px
+                    768: {
+                      slidesPerView: 3,
+                      spaceBetween: 40,
+                    },
+                }
+            }
+
             >
 
              

@@ -32,8 +32,8 @@ const Banner = () => {
           <img id='sliderImg' src={images[currentImage]} alt='' />
         </div>
         <div className='overlay'>
-          <div className='content text-center mt-48 w-3/4 mx-auto '>
-            <h1 className='text-4xl font-bold text-pink-100 py-2'>Welcome To BeautySwap <br /> & </h1>
+          <div className='content text-center lg:mt-48 w-3/4 mx-auto '>
+            <h1 className='lg:text-4xl lg:font-bold sm:text-2xl sm:mt-20 text-pink-100 py-2'>Welcome To BeautySwap <br /> & </h1>
             <h1 className='text-5xl font-semibold text-pink-100 pb-4'>Resell Your Unused Beauty Products Here</h1>
             <p className='text-1xl'>Cosmetics are inhabitable part of women’s lives in today’s world. It adds extra elegance <br /> to our appearance and makes us feel more comfortable and confident...</p>
             <button className="btn btn-outline text-white hover:bg-pink-200 hover:text-black mt-5">Get Started</button>

@@ -10,26 +10,26 @@ const Service = () => {
             <h2 className='text-3xl text-center font-semibold pt-4 pb-7 text-gray-700' style={{ fontFamily: 'Playfair Display',   }}>Countless Experience</h2>
             <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-6 '>
                 <div className='shadow-2xl  p-7'>
-                <div className='grid lg:grid-cols-3   '>
+                <div className='lg:flex  '>
                 <img  src= {img1} alt="Shoes" />
-                <h1 className='text-3xl font-bold ' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>MoneyBack</h1>
+                <h1 className='text-3xl font-bold  lg:ml-16' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>MoneyBack</h1>
                 </div>
-                <p className='ml-32'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
+                <p className='lg:ml-32'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
                 </div>
                <div  className=' shadow-2xl p-7'>
-               <div className='grid lg:grid-cols-3 gap-4 '>
+               <div className='lg:flex lg:gap-10'>
                 <img  src= {img2} alt="Shoes" />
-                <h1 className='text-3xl font-bold text-orange-600' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>GiftCoupon</h1>
+                <h1 className='text-3xl font-bold text-orange-600' style={{ fontFamily: 'Playfair Display lg:ml-16', color:'#965a3e'  }}>GiftCoupon</h1>
                 </div>
-                <p className='ml-32 mt-0'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
+                <p className='lg:ml-32 mt-0'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
                </div>
                 <div  className=' shadow-2xl p-7'>
-                <div className='flex '>
+                <div className='lg:flex '>
                 <img  src= {img3} alt="Shoes" />
-                <h1 className='text-3xl font-bold ml-16 text-orange-600' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>24/7 Service
+                <h1 className='text-3xl font-bold lg:ml-16 text-orange-600' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>24/7 Service
 </h1>
                 </div>
-                <p className='ml-32'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
+                <p className='lg:ml-32'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
                 </div>
             </div>
         </div>

@@ -5,9 +5,13 @@ const MyOrderCard = ({ order }) => {
     const { book_title, resale_price, image_url, saler_name, name, email, location } = order
 
     return (
-        <div className="card card-side bg-pink-50 shadow-xl mt-5 mx-10">
-            <figure><img src={image_url} className='h-72  w-96' alt="Movie" /></figure>
-            <div className="card-body ml-20">
+        <div className="card card-side bg-pink-50 shadow-xl mt-5 lg:mx-10">
+           <div className='sm:grid sm:grid-cols-1 lg:flex'>
+           <div>
+           <figure><img src={image_url} className='h-72  w-96' alt="Movie" /></figure>
+           </div>
+           
+            <div className="card-body lg:ml-20">
                 <h2 className="card-title text-2xl font-bold" style={{ fontFamily: 'Libre Baskerville', color: '#965a3e' }}>Product Name:  {book_title}</h2>
                 <div className='text-1xl font-semibold' style={{ fontFamily: 'Libre Baskerville', }}>
                     <p>resale Price:  {resale_price} <br /></p>
@@ -25,6 +29,7 @@ const MyOrderCard = ({ order }) => {
                     }
                 </div>
             </div>
+        </div>
         </div>
     );
 };
