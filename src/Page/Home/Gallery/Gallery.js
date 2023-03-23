@@ -87,6 +87,8 @@ const Gallery = () => {
   };
 
   return (
+
+    
     <>
       {data.img && (
         <div
@@ -102,7 +104,7 @@ const Gallery = () => {
           }}
         >
 
-<h1 className='text-4xl text-center font-semibold my-5' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>See Our Up Coming Products</h1>
+
            
 
           <img
