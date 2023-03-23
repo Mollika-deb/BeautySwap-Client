@@ -20,16 +20,18 @@ const Offer = () => {
                             data-aos-easing="linear"
                             data-aos-duration="3000" />
                     </div>
-                    <div className='sm:hidden flex justify-center items-center'>
+
+                    <div className='flex justify-center items-center'>
                         <div data-aos="fade-left"
                             data-aos-easing="linear"
-                            data-aos-duration="3000" >
+                            data-aos-duration="3000">
                             <h1 className="lg:text-5xl font-bold" style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>20% Flat Disscount</h1>
-                            <h1 className="lg:text-4xl  sm:text-3xl py-3 font-semibold text-gray-600">On makeup Products</h1>
+                            <h1 className="lg:text-4xl py-3 font-semibold text-gray-600">On Jewelry Products</h1>
                             <p className="lg:py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                             <button className="btn btn-outline text-orange-900 hover:bg-pink-400 hover:text-black mt-5">Get Started</button>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <div className="w-full mb-10" >

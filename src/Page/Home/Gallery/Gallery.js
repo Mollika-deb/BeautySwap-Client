@@ -101,6 +101,10 @@ const Gallery = () => {
             overflow: 'hidden'
           }}
         >
+
+<h1 className='text-4xl text-center font-semibold my-5' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>See Our Up Coming Products</h1>
+           
+
           <img
             src={data.img}
             alt=""
