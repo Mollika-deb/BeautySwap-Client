@@ -7,7 +7,7 @@ const MyBuyers = () => {
 
     useEffect(()=>{
 
-        fetch('http://localhost:5000/buyer?Role=buyer')
+        fetch('https://beauty-bin-server.vercel.app/buyer?Role=buyer')
         .then(res => res.json())
         .then(data => setBuyers(data))
     }, [])

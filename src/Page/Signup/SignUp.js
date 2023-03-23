@@ -48,7 +48,7 @@ const SignUp = () => {
 
     const saveUser = (name, email, Role) => {
         const user = { name, email, Role };
-        fetch('http://localhost:5000/user', {
+        fetch('https://beauty-bin-server.vercel.app/user', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

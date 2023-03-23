@@ -6,7 +6,7 @@ const AllSellers = () => {
     const [sellers, setSellers] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/seller?Role=seller')
+        fetch('https://beauty-bin-server.vercel.app/seller?Role=seller')
         .then(res => res.json())
         .then(data => setSellers(data))
     },[])

@@ -9,7 +9,7 @@ const [products, setProducts] = useState([])
 
 useEffect(()=>{
     if (user && user.email) { // add null check for user object
-        fetch(`http://localhost:5000/addproduct?email=${user.email}`)
+        fetch(`https://beauty-bin-server.vercel.app/addproduct?email=${user.email}`)
             .then(res => res.json())
             .then(data => setProducts(data))
             .catch(err => console.log(err));
@@ -18,7 +18,7 @@ useEffect(()=>{
  
     return (
       <div className='my-20'>
-          <h1 className='text-4xl text-center font-semibold my-5' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>See Your Order</h1>
+          <h1 className='text-4xl text-center font-semibold my-5' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>See Your Products</h1>
             <div className='grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'></div>
       
 

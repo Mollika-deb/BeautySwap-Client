@@ -33,7 +33,7 @@ const AddProducts = () => {
             email
         }
 
-        fetch('http://localhost:5000/addproduct', {
+        fetch('https://beauty-bin-server.vercel.app/addproduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

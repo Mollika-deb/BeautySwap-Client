@@ -22,7 +22,7 @@ const MyProductsCard = ({product}) => {
 
                 <div className="card-actions justify-start">
                    
-                            <button className="btn btn-outline btn-sm text-orange-900 hover:bg-pink-400 hover:text-black mt-5">Pay Now</button>
+                            <button className="btn btn-outline btn-sm text-orange-900 hover:bg-pink-400 hover:text-black mt-5">Delete</button>
                      
                 </div>
                 
