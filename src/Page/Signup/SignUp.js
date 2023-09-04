@@ -65,62 +65,7 @@ const SignUp = () => {
     }
 
 
-    // const saveSeller = (name, email, sallerRole)=>{
-    //     const user = {name, email, sallerRole};
-    //     fetch('https://beauty-bin-server.vercel.app/buyer',{
-    //         method: 'POST',
-    //         headers: {
-    //             'content-type': 'application/json',
-    //         },
-    //         body: JSON.stringify(user)
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data)
-    //             navigate('/');
-
-
-    //         })
-    // }
-
-
-    // const handleSignup = event => {
-    //     event.preventDefault()
-
-    //     const form = event.target;
-    //     const name= form.name.value;
-    //     const email = form.email.value;
-    //     const password = form.password.value;
-
-
-    //     createUser(email, password)
-
-    //         .then(result => {
-    //             const user = result.user;
-    //             console.log(user);
-    //             form.reset();
-    //             handleUpdateUsrProfile(name,)
-    //             navigate('/login')
-
-    //         })
-    //         .catch(error => console.log(error))
-
-
-
-    // }
-
-    // const handleUpdateUsrProfile = (name, photoURL) =>{
-    //     const profile = {
-    //         displayName: name,
-    //         photoURL: photoURL
-
-    //     }
-    //     updateUserPofile(profile)
-    //     .then(() =>{})
-    //     .then(err => console.error(err))
-    // }
-
-
+   
 
 
 
@@ -158,23 +103,7 @@ const SignUp = () => {
 
                         </div>
 
-                        {/* <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">buyer role</span>
-                            </label>
-                            <input {...register("Role")} type="text" placeholder="type Buyer if you are a buyer" className="input input-bordered" />
-                            {errors.Role && <p className='text-red-600' role="alert">{errors.Role?.message}</p>}
-
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Seller role</span>
-                            </label>
-                            <input {...register("Role")} type="text" placeholder="type seller if you are a seller" className="input input-bordered" />
-                            {errors.Role && <p className='text-red-600' role="alert">{errors.Role?.message}</p>}
-
-                        </div> */}
-
+                       
                         <fieldset className=' border-2 rounded-md  mt-2'>
 
                             <legend>Select a Role:</legend>
