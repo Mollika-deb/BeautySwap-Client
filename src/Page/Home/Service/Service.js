@@ -5,31 +5,37 @@ import img3 from '../../../images/time.png'
 
 const Service = () => {
     return (
-        <div className='mx-10 my-32'>
-            <h2 className='text-5xl text-center ' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>Why Choose Us</h2>
-            <h2 className='text-3xl text-center font-semibold pt-4 pb-7 text-gray-700' style={{ fontFamily: 'Playfair Display',   }}>Countless Experience</h2>
-            <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-6 '>
-                <div className='shadow-2xl  p-7'>
-                <div className='lg:flex  '>
-                <img  src= {img1} alt="Shoes" />
-                <h1 className='text-3xl font-bold  lg:ml-16' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>MoneyBack</h1>
-                </div>
-                <p className='lg:ml-32'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
-                </div>
-               <div  className=' shadow-2xl p-7'>
-               <div className='lg:flex lg:gap-10'>
-                <img  src= {img2} alt="Shoes" />
-                <h1 className='text-3xl font-bold text-orange-600' style={{ fontFamily: 'Playfair Display lg:ml-16', color:'#965a3e'  }}>GiftCoupon</h1>
-                </div>
-                <p className='lg:ml-32 mt-0'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
+        <div className='w-[90vw] md:w-[90vw] lg:w-[80vw] mx-auto my-16 md:my-16 lg:my-32 overflow-hidden'>
+            <h2 className='text-3xl md:3xl lg:text-5xl text-center ' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>Why Choose Us</h2>
+            <h2 className='text-3xl text-center font-semibold pt-4 mb-7 text-gray-700' style={{ fontFamily: 'Playfair Display',   }}>Countless Experience</h2>
+            <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-6 '>
+                <div className='lg:shadow-md  p-5'>
+                <div className='  '>
+               <div className='flex justify-center'>
+               <img className='h-28 w-28 self-center' src= {img1} alt="Shoes" />
                </div>
-                <div  className=' shadow-2xl p-7'>
-                <div className='lg:flex '>
-                <img  src= {img3} alt="Shoes" />
-                <h1 className='text-3xl font-bold lg:ml-16 text-orange-600' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>24/7 Service
+                <h1 className='text-2xl font-bold  text-center py-2' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>Cash Back</h1>
+                </div>
+                <p className='text-center  text-sm'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
+                </div>
+               <div  className=' lg:shadow-md p-5'>
+               <div className=''>
+               <div className='flex justify-center'>
+               <img className='h-28 w-28 self-center' src= {img2} alt="Shoes" />
+               </div>
+                <h1 className='text-2xl font-bold text-orange-600 text-center py-2' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>Gift Coupon</h1>
+                </div>
+                <p className='text-center text-sm'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
+               </div>
+                <div  className=' lg:shadow-md p-5'>
+                <div className=' '>
+                <div className='flex justify-center'>
+               <img className='h-28 w-28 self-center' src= {img3} alt="Shoes" />
+               </div>
+                <h1 className='text-2xl font-bold  text-orange-600 text-center py-2' style={{ fontFamily: 'Playfair Display ', color:'#965a3e'  }}>24/7 Service
 </h1>
                 </div>
-                <p className='lg:ml-32'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
+                <p className='text-center text-sm'>Average people say this to console themselves when they feel helpless to make a positive change in the world.</p>
                 </div>
             </div>
         </div>

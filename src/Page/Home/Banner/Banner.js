@@ -32,7 +32,7 @@ const Banner = () => {
           <img className='h-64 object-cover' id='sliderImg' src={images[currentImage]} alt='' />
         </div>
         <div className='overlay'>
-          <div className='content text-center lg:mt-48 mt-20 md:mt-20 w-3/4 mx-auto '>
+          <div className='content text-center lg:mt-48 mt-20 md:mt-20 lg:w-3/4 mx-auto '>
             <h1 className='lg:text-4xl text-2xl lg:font-bold sm:text-2xl sm:mt-20 text-pink-100 py-2'>Welcome To BeautySwap <br /> & </h1>
             <h1 className='lg:text-5xl text-3xl md:text-3xl font-semibold text-pink-100 pb-4'>Resell Your Unused Beauty Products Here</h1>
             <p className='text-1xl hidden lg:block md:block'>Cosmetics are inhabitable part of women’s lives in today’s world. It adds extra elegance <br /> to our appearance and makes us feel more comfortable and confident...</p>
