@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
-import image from '../../images/sign1.avif'
+import image from '../../images/sugnup.avif'
 
 const SignUp = () => {
 
@@ -71,34 +71,28 @@ const SignUp = () => {
 
     return (
         <div className="hero ">
-            <div className="hero-content grid md:grid-cols-2  flex-col lg:flex-row mt-32 h-max">
+            <div className="hero-content grid md:grid-cols-2  flex-col lg:flex-row mt-10 h-max">
                 <div className="text-center max-w-lg lg:text-left">
 
                     <img id="" src={image} alt="" className="rounded-3xl mr-16" style={{ height: '500px' }} />
 
                 </div>
-                <div className="card  max-w-lg shadow-2xl bg-base-100 ml-16" >
-                    <h1 className="text-5xl font-bold text-center" style={{ fontFamily: 'Oleo Script', color: '#8DB255' }}>Sign Up now!</h1>
+                <div className="card  max-w-lg  bg-base-100 " >
+                    <h1 className="text-3xl font-semibold text-center opacity-90" style={{ fontFamily: 'Oleo Script',  }}>Sign Up Now!</h1>
                     <form onSubmit={handleSubmit(handleSignUp)} className="card-body">
                         <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Name</span>
-                            </label>
-                            <input {...register("name", { required: "name is required" })} type="text" placeholder="email" className="input input-bordered" />
+                            
+                            <input {...register("name", { required: "name is required" })} type="text" placeholder="email" className="w-[80vw] sm:w-[90vw] md:w-[90%] lg:w-[450px] bg-[#F7F7F7] rounded-[25px] px-5 sm:px-6 md:px-7 h-12 mx-auto mt-2 outline-none" />
                             {errors.name && <p className='text-red-600' role="alert">{errors.name?.message}</p>}
                         </div>
                         <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Email</span>
-                            </label>
-                            <input {...register("email", { required: "Email Address is required" })} type="email" placeholder="email" className="input input-bordered" />
+                            
+                            <input {...register("email", { required: "Email Address is required" })} type="email" placeholder="email" className="w-[80vw] sm:w-[90vw] md:w-[90%] lg:w-[450px] bg-[#F7F7F7] rounded-[25px] px-5 sm:px-6 md:px-7 h-12 mx-auto mt-2 outline-none" />
                             {errors.email && <p className='text-red-600' role="alert">{errors.email?.message}</p>}
                         </div>
                         <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Password</span>
-                            </label>
-                            <input {...register("password", { required: "password Address is required" })} type="password" placeholder="password" className="input input-bordered" />
+                            
+                            <input {...register("password", { required: "password Address is required" })} type="password" placeholder="password" className="w-[80vw] sm:w-[90vw] md:w-[90%] lg:w-[450px] bg-[#F7F7F7] rounded-[25px] px-5 sm:px-6 md:px-7 h-12 mx-auto mt-2 outline-none" />
                             {errors.password && <p className='text-red-600' role="alert">{errors.password?.message}</p>}
 
                         </div>
@@ -123,12 +117,11 @@ const SignUp = () => {
 
                         </fieldset>
 
-                        <div className="form-control mt-6">
-                            <input className="btn bg-pink-600 w-full" type="submit" value="SignIn" />
-
-                        </div>
+                        <button className="w-[80vw] sm:w-[90vw] md:w-[90%] lg:w-[450px]  bg-[#f44036] transition-all ease-in-out duration-100 text-white rounded-[25px] px-5 sm:px-6 md:px-7 h-12 font-medium text-[17px] shadow-gray-400 shadow-md mt-6 mx-auto">
+              Sign Up
+            </button>
                     </form>
-                    <p className=" font-semibold text-center text-xl pb-4">New to BeautySwap? please <Link className='text-green-700 font-bold' to='/login'>Sign In!</Link></p>
+                    <p className=" font-semibold text-center text-base pb-4">New to BeautySwap? please <Link className='text-[#FF5E55] font-semibold' to='/login'>Sign In!</Link></p>
                 </div>
             </div>
         </div>
