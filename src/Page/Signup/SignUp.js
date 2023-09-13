@@ -70,11 +70,11 @@ const SignUp = () => {
 
 
     return (
-        <div className="hero ">
+        <div className="hero overflow-hidden">
             <div className="hero-content grid md:grid-cols-2  flex-col lg:flex-row mt-10 h-max">
                 <div className="text-center max-w-lg lg:text-left">
 
-                    <img id="" src={image} alt="" className="rounded-3xl mr-16" style={{ height: '500px' }} />
+                    <img id="" src={image} alt="" className="rounded-3xl mr-16 hidden md:block lg:block" style={{ height: '500px' }} />
 
                 </div>
                 <div className="card  max-w-lg  bg-base-100 " >

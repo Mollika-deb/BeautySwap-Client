@@ -4,6 +4,9 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import icon from '../../images/login1.jpg'
+import img from '../../images/logIn.avif'
+import {BsApple, BsFacebook} from 'react-icons/bs'
+import {FcGoogle} from 'react-icons/fc'
 
 const Login = () => {
 
@@ -96,40 +99,52 @@ const Login = () => {
     
 
     return (
-        <div className="hero w-full my-20 ">
-        <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
+        <div className="hero w-full my-10 overflow-hidden">
+        <div className="hero-content flex items-center">
             <div className="text-center lg:text-left">
 
-                <img src={icon} alt="" />
-                <div className='flex items-center justify-center w-full'>
+                <img src={img} className='hidden md:block w-[35vw] max-w-[500px]'  alt="" />
+                {/* <div className='flex items-center justify-center w-full'>
                 <button onClick={handleGoogleSignIn}  className="btn btn-success  px-10 font-semibold text-white py-3 m-5">Sign In With Google</button>
-                </div>
+                </div> */}
             </div>
-            <div className="card  w-full  shadow-2xl bg-base-100">
-                <h1 className="text-5xl font-bold text-center pt-4">Sign In!</h1>
+            <div className="card  w-full   bg-base-100">
+                <h1 className="text-3xl font-semibold text-center opacity-90">Sign In!</h1>
                 <form onSubmit={handleSubmit(handleLogIn)} className="card-body">
                         
                         <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Email</span>
-                            </label>
-                            <input {...register("email", { required: "Email Address is required" })}  type="email"  placeholder="email" className="input input-bordered" />
+                          
+                            <input {...register("email", { required: "Email Address is required" })}  type="email"  placeholder="email" className="w-[80vw] sm:w-[90vw] md:w-[90%] lg:w-[450px] bg-[#F7F7F7] rounded-[25px] px-5 sm:px-6 md:px-7 h-12 mx-auto mt-6 outline-none" />
                             {errors.email && <p className='text-red-600' role="alert">{errors.email?.message}</p>}
                         </div>
                         <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Password</span>
-                            </label>
-                            <input {...register("password", { required: "Email Address is required" })}  type="password"  placeholder="password" className="input input-bordered" />
+                            
+                            <input {...register("password", { required: "Email Address is required" })}  type="password"  placeholder="password" className="w-[80vw] sm:w-[90vw] md:w-[90%] lg:w-[450px] bg-[#F7F7F7] rounded-[25px] px-5 sm:px-6 md:px-7 h-12 mx-auto mt-3 outline-none" />
                             {errors.password && <p className='text-red-600' role="alert">{errors.password?.message}</p>}
 
                         </div>
-                        <div className="form-control mt-6">
-                            <input className="btn bg-pink-600 w-full" type="submit" value="Log In" />
-
-                        </div>
+                        <button className="w-[80vw] sm:w-[90vw] md:w-[90%] lg:w-[450px]  bg-[#f44036] transition-all ease-in-out duration-100 text-white rounded-[25px] px-5 sm:px-6 md:px-7 h-12 font-medium text-[17px] shadow-gray-400 shadow-md mt-6 mx-auto">
+              Sign In
+            </button>
                     </form>
-                <p className='text-center mb-6'>New to BeautySwap ? <Link className='font-bold text-orange-600 ' to='/signup'>Sign Up</Link> </p>
+
+                    <p className="text-[#242424] text-xl font-medium text-center mb-8">
+              Sign in with
+            </p>
+
+            <div className="flex justify-center items-center gap-6 mb-[50px]">
+              <BsApple className="w-5 h-5 cursor-pointer" />
+              <BsFacebook
+              
+                className="w-5 h-5 text-blue-500 cursor-pointer"
+              />
+              <FcGoogle
+                onClick={handleGoogleSignIn}
+                className="w-6 h-6  cursor-pointer"
+              />
+            </div>
+
+                <p className='font-semibold text-center text-base pb-4'>New to BeautySwap ? <Link className='text-[#FF5E55] font-semibold ' to='/signup'>Sign Up</Link> </p>
             </div>
         </div>
     </div>
