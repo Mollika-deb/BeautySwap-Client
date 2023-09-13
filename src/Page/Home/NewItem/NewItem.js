@@ -12,9 +12,9 @@ const NewItem = () => {
     },[])
 
     return (
-        <div className='mt-52'>
+        <div className='mt-16 lg:mt-32  w-[90vw] md:[90-vw] lg:w-[80vw] mx-auto overflow-hidden'>
             <h1 className='text-4xl text-center font-semibold my-5' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>Our New Items</h1>
-            <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-3 '>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-10'>
             
                 {
                     items.map(item =><NewItemCard

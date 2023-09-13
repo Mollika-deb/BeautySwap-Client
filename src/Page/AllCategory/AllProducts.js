@@ -19,7 +19,7 @@ const AllProducts = ({ product, setBook }) => {
      </div>
    
     <div className='flex '>
-    <label onClick={() =>setBook(product)} htmlFor="booking-modal" className="btn btn-outline btn-sm bg-pink-400 text-white w-56 my-5">Book Now</label>
+    <label onClick={() =>setBook(product)} htmlFor="booking-modal" className="btn btn-outline btn-sm text-orange-900 hover:bg-pink-400 hover:text-black my-5">Book Now</label>
     </div>
 
            </div>
