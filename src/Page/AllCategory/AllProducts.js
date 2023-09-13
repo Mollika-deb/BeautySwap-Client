@@ -28,20 +28,41 @@ const AllProducts = ({ product, setBook }) => {
 
         // </div>
 
-        <div className="card card-side bg-pink-50 shadow-xl mt-5 mx-10">
-            <figure><img src={image_url} className='h-72  w-96' alt="Movie" /></figure>
-            <div className="card-body ml-20">
-                <h2 className="card-title text-2xl font-bold" style={{ fontFamily: 'Libre Baskerville', color: '#965a3e' }}>Product Name:  {book_title}</h2>
-                <div className='text-1xl font-semibold' style={{ fontFamily: 'Libre Baskerville', }}>
-                    <p>resale Price:  {resale_price} <br /></p>
+        // <div className="card card-side bg-pink-50  mt-5 ">
+        //     <figure><img src={image_url} className='h-72  w-96' alt="Movie" /></figure>
+        //     <div className="card-body ml-20">
+        //         <h2 className="card-title text-2xl font-bold" style={{ fontFamily: 'Libre Baskerville', color: '#965a3e' }}>Product Name:  {book_title}</h2>
+        //         <div className='text-1xl font-semibold' style={{ fontFamily: 'Libre Baskerville', }}>
+        //             <p>resale Price:  {resale_price} <br /></p>
                    
-                    <p>Original Price:  {original_peice}</p>
-                    <p>Saller Name:  {saler_name}</p>
-                    <p>Metting Location:  {location}</p>
-                </div>
+        //             <p>Original Price:  {original_peice}</p>
+        //             <p>Saller Name:  {saler_name}</p>
+        //             <p>Metting Location:  {location}</p>
+        //         </div>
                
-                 <label onClick={() =>setBook(product)} htmlFor="booking-modal" className="btn bg-pink-600 w-64">Book Now</label>
-            </div>
+        //          <label onClick={() =>setBook(product)} htmlFor="booking-modal" className="btn bg-pink-600 w-64">Book Now</label>
+        //     </div>
+        // </div>
+        
+        <div className='bg-white rounded-md'>
+            <img src={image_url} className='h-52 w-full rounded-t-md' alt="Movie" />
+           <div className='px-5'>
+           <h2 className="card-title text-xl font-bold py-3" style={{ fontFamily: 'Libre Baskerville', color: '#965a3e' }}>{book_title}</h2>
+
+<div className='text-sm font-semibold opacity-90 bg-white' style={{ fontFamily: 'Libre Baskerville', }}>
+         <p>resale Price: {resale_price}tk <br /></p>
+       
+         <p>Original Price: {original_peice}tk</p>
+         <p>Saller Name: {saler_name}</p>
+         <p>Metting Location: {location}</p>
+     </div>
+   
+    <div className='flex '>
+    <label onClick={() =>setBook(product)} htmlFor="booking-modal" className="btn btn-outline btn-sm bg-pink-400 text-white w-56 my-5">Book Now</label>
+    </div>
+
+           </div>
+
         </div>
     );
 };

@@ -19,8 +19,8 @@ const SwiperImg = () => {
     return (
         <div className='w-[90vw] md:w-[90vw] lg:w-[80vw] mx-auto items-center justify-center my-40  sliderImg' >
             <div>
-                <h1 className='text-3xl md:text-3xl lg:text-5xl text-center ' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>Follow Our Trending Items</h1>
-                <h1 className='text-center text-xl md:text-xl lg:text-3xl text-gray-700 font-semibold pt-3 pb-6'>Buy And Get Discount</h1>
+                <h1 className='text-3xl md:text-3xl lg:text-5xl text-center pb-10' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>Meet Our Experts</h1>
+               
             </div>
             <Swiper
 //                
