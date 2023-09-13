@@ -56,10 +56,10 @@ const Navbar = () => {
               
             </ul>
           </div>
-          <Link to='/' className=" btn btn-ghost normal-case text-xl text-black">BeautySwap</Link>
+          <Link to='/' className=" btn btn-ghost normal-case text-2xl text-black">BeautySwap</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-black text-sm">
+          <ul className="menu menu-horizontal px-1 text-black text-base">
           <li><Link to='/'>Home</Link></li>
               <li><Link to='/dashboard' >Dashboard</Link></li>
              
@@ -79,8 +79,8 @@ const Navbar = () => {
             :
             <>
                    
-                   <Link to='/signup' className=" text-black text-sm hidden lg:block">Sign Up</Link>
-                   <Link to='login' className=" text-black text-sm hidden lg:block lg:ml-5">Sign In</Link>
+                   <Link to='/signup' className=" text-black text-base hidden lg:block">Sign Up</Link>
+                   <Link to='login' className=" text-black text-base hidden lg:block lg:ml-5">Sign In</Link>
                    
             </>
       
