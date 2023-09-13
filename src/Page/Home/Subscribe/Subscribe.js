@@ -12,9 +12,9 @@ const Subscribe = () => {
      data-aos-duration="1500">
                     <h1 className="lg:mb-5 lg:text-5xl font-bold text-pink-200"  style={{ fontFamily: 'Libre Baskerville', }}>Subscribe Now!</h1>
                     <p className="mb-5">& Get Unlimited Offer</p>
-                    <div className='lg:flex '>
+                    <div className='lg:flex items-center'>
                     <input type="text" placeholder="Type here" className="input input-bordered input-warning bg-black w-full max-w-xs" />
-                    <button className="btn btn-outline text-white hover:bg-pink-200 hover:text-black sm:mt-3 ml-5">Subscribe</button>
+                    <button className="btn  btn-outline text-white hover:bg-pink-200 hover:text-black ml-5">Subscribe</button>
                     </div>
                 </div>
             </div>

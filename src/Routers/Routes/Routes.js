@@ -15,6 +15,7 @@ import ReportedItem from "../../Page/DashBoard/ReportedItem/ReportedItem";
 import Home from "../../Page/Home/Home/Home";
 import Login from "../../Page/Login/Login";
 import SignUp from "../../Page/Signup/SignUp";
+import Blog from "../../Page/Blog/Blog";
 
 export const router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
            {
             path:'/signup',
             element:<SignUp></SignUp>
+           },
+           {
+            path:'/blog',
+            element:<Blog/>
            }
         ]
     },

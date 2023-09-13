@@ -18,7 +18,7 @@ useEffect(()=>{
  
     return (
       <div className='my-20'>
-          <h1 className='text-4xl text-center font-semibold my-5' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>See Your Products</h1>
+          <h1 className='text-4xl text-center font-semibold my-5 text-[#965a3e]' style={{ fontFamily: 'Libre Baskerville', color:'#965a3e' }}>See Your Products</h1>
             <div className='grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'></div>
       
 

@@ -57,7 +57,7 @@ const AddProducts = () => {
 
     return (
         <div>
-        <h1 className='text-5xl mt-28 mb-5 text-center text-orange-700' style={{ fontFamily: 'Playfair Display',   }}>Add Your Poducts</h1>
+        <h1 className='taxt-3xl md:3xl lg:text-5xl lg:mt-16 mb-5 text-center text-[#965a3e]' style={{ fontFamily: 'Playfair Display',   }}>Add Your Poducts</h1>
 
         <form onSubmit={handleAddItems} className="card-body">
                    <div className="form-control grid grid-cols-2 gap-5">
@@ -92,7 +92,7 @@ const AddProducts = () => {
                   
                    
                    <div className="form-control mt-6">
-                       <input className="btn bg-orange-500" type="submit" value="add your products" />
+                       <input className="btn bg-[#965a3e]" type="submit" value="add your products" />
 
                    </div>
                </form>
